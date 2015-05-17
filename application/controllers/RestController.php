@@ -9,6 +9,7 @@ class RestController extends Zend_Controller_Action
         
         $data = array(
             'requestMethod' => $this->_request->getMethod(),
+            'requestUri' => $this->_request->getRequestUri(),
             'queryParams' => $this->_request->getQuery(),
             'formParams' => $this->_request->getPost(),
             'rawBody' => $this->_request->getRawBody(),
