@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c191e7b9d44e3a3c06f76b048f26f860",
+    "hash": "79068f21bd48ee5780a84815babcf4c2",
     "packages": [
         {
             "name": "codeception/codeception",
-            "version": "2.0.13",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Codeception/Codeception.git",
-                "reference": "2a7aed27b78e90699a8ef43182eede6cfa0f5a5b"
+                "url": "https://github.com/Naktibalda/Codeception.git",
+                "reference": "96aacaf920d06fa51eaa8d726e71a9f561c6059c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/2a7aed27b78e90699a8ef43182eede6cfa0f5a5b",
-                "reference": "2a7aed27b78e90699a8ef43182eede6cfa0f5a5b",
+                "url": "https://api.github.com/repos/Naktibalda/Codeception/zipball/96aacaf920d06fa51eaa8d726e71a9f561c6059c",
+                "reference": "96aacaf920d06fa51eaa8d726e71a9f561c6059c",
                 "shasum": ""
             },
             "require": {
@@ -64,7 +64,6 @@
                     "Codeception": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -79,12 +78,15 @@
             "homepage": "http://codeception.com/",
             "keywords": [
                 "BDD",
-                "TDD",
                 "acceptance testing",
                 "functional testing",
+                "tdd",
                 "unit testing"
             ],
-            "time": "2015-04-24 23:54:03"
+            "support": {
+                "source": "https://github.com/Naktibalda/Codeception/tree/develop"
+            },
+            "time": "2015-05-17 22:03:24"
         },
         {
             "name": "doctrine/instantiator",
@@ -1669,7 +1671,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "codeception/codeception": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
