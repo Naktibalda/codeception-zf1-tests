@@ -8,7 +8,11 @@ class RestController extends Zend_Controller_Action
         $this->_helper->viewRenderer->setNoRender(true);
         
         $data = array(
-            'method' => $this->_request->getMethod(),
+            'requestMethod' => $this->_request->getMethod(),
+            'queryParams' => $this->_request->getQuery(),
+            'formParams' => $this->_request->getPost(),
+            'rawBody' => $this->_request->getRawBody(),
+            'headers' => $this->_request->getHeaders(),
         );
         
         $this->_response
