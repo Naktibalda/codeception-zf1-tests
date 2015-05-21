@@ -1,3 +1,4 @@
 .directory
 vendor
 tests/_output
+composer.lock
