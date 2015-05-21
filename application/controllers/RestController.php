@@ -14,6 +14,7 @@ class RestController extends Zend_Controller_Action
             'formParams' => $this->_request->getPost(),
             'rawBody' => $this->_request->getRawBody(),
             'headers' => $this->_request->getHeaders(),
+            'X-Auth-Token' => $this->_request->getHeader('X-Auth-Token'),
         );
         
         $this->_response
