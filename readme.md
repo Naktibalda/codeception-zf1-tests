@@ -6,7 +6,6 @@ cd codeception-zf1-tests
 
 composer install
 
-
 ./vendor/bin/codecept run
 
 
