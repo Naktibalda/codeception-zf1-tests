@@ -1,6 +1,9 @@
 {
     "require": {
-        "zendframework/zendframework1": "1.12.11",
+        "zendframework/zendframework1": "1.12.11"
+    },
+    "require-dev": {
         "codeception/codeception": "^2.0"
     }
+
 } 
