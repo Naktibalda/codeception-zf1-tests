@@ -1,16 +1,11 @@
 ## Deployment
 
-git clone https://github.com/Naktibalda/codeception-zf1-tests.git
+git clone --recursive https://github.com/Naktibalda/codeception-zf1-tests.git
 
 cd codeception-zf1-tests
 
 composer install
 
-cd tests/functional/REST
-
-git submodule update
-
-cd ../../..
 
 ./vendor/bin/codecept run
 
