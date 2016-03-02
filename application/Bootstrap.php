@@ -2,6 +2,12 @@
 
 class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 {
+    protected function _initRegistry()
+    {
+        $registry = new Zend_Registry(['email' => 'test@example.com']);
+        Zend_Registry::setInstance($registry);
+    }
+
     protected function _initRoutes()
     {
         $front = Zend_Controller_Front::getInstance();
