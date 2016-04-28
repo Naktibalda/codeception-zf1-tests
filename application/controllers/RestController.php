@@ -15,6 +15,7 @@ class RestController extends Zend_Controller_Action
             'rawBody' => $this->_request->getRawBody(),
             'headers' => $this->_request->getHeaders(),
             'X-Auth-Token' => $this->_request->getHeader('X-Auth-Token'),
+            'files' => $_FILES,
         );
         
         $this->_response
